@@ -21,14 +21,14 @@ a {
     color: unset;
 }
 
-a:hover {
-    color: #9DB3DB;
-}
-
 .head_info {
     background-color: #03174C;
     height: 20%;
     padding: 1% 5%;
+}
+
+.info_menu a:hover {
+    color: #9DB3DB;
 }
 
 .info_menu {
@@ -44,9 +44,9 @@ a:hover {
     color: #ffffff;
 }
 
-.info_menu form {
+/* .info_menu form {
     display: flex;
-}
+} */
 
 .search_place {
     border: none;
@@ -60,6 +60,7 @@ a:hover {
     position: relative;
     height: 25px;
     padding: 0px 10px 0px 0px;
+    cursor: pointer;
 }
 
 .toggle_menu {
@@ -81,12 +82,397 @@ a:hover {
 
 .banner {
     background-image: url(images/banner-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.banner_wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .banner_info {
-    border: 1px solid red;
+    background-color: #616a75;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.banner_info h1, .banner_info h2 {
+    margin: 10px;
+}
+
+.banner_info h1 {
+    font-size: 4em;
+    color: white;
+}
+
+.banner_info h2 {
+    font-size: 3em;
+    color:  #03174c;
+}
+
+.banner_info p {
+    color: white;
+    margin: 30px 20px 50px;
+    font-size: 1.5em;
+}
+
+.banner_btn {
+    background-color: #03174C;
+    width: max-content;
+    font-size: 1.5em;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.banner_btn:hover {
+    background-color: #fe6805;
+}
+
+.arrow {
+    background-color: #03174C;
+    border-radius: 50% 50%;
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+}
+
+.arrow:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.slide {
+    align-self: start;
+    margin-left: 5%;
+}
+
+.about_us_section {
+    height: 100%;
+    margin-top: 5%;
+}
+
+.section_title {
+    text-align: center;
+    height: 20%;
+}
+
+.title_head {
+    display: inline;
+    font-size: 3em;
+    border-bottom: 2px solid #68c7fe;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.section_title p {
+    font-size: 1.5em;
+    padding-top: 3%;
+}
+
+.our_gym_wrapper {
+    background-color: black;
+    height: 85%;
+}
+
+.gym_info_wrapper {
+    color: white;
+    width: 40%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin: 5% 0% 0% 10%;
+}
+
+.our_gym {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.gym_info {
+    font-size: 1.5em;
+}
+
+.about_btn {
+    background-color: #fe6805;
+    width: max-content;
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 15px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about_btn:hover {
+    color: black;
+}
+
+.gym_image {
+    background-image: url(images/about-bg.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.our_classes_section {
+    height: 90%;
+    margin-top: 8%;
+}
+
+.our_classes_info {
+    display: flex;
+    justify-content: center;
+}
+
+.classes_item {
+    text-align: center;
+    width: 20%;
+    padding: 0px 20px;
+}
+
+.classes_item div {
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.our_classes_btn {
+    display: flex;
+    justify-content: center;
+}
+
+.our_classes_btn a{
+    background-color: #03174C;
+    width: max-content;
+    color: white;
+    padding: 15px 60px;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.our_classes_btn a:hover{
+    background-color: #fe6805;
+}
+
+.partner_udp_section {
+    background-image: url(images/img-4.png);
+    background-repeat: no-repeat;
+    height: 50%;
+}
+
+.partner_wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+    height: 70%;
+    padding: 5% 15%;
+}
+
+.partner_udp_head {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.partner_wrapper p{
+    font-size: 1.5em;
+}
+
+.partner_udp_btn {
+    background-color: #fe6805;
+    width: max-content;
+    border-radius: 10px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.partner_udp_btn:hover {
+    color: black;
+}
+
+.our_price_section {
+    margin-top: 5%;
+}
+
+.price_section_title {
+    text-align: center;
+    height: 20%;
+}
+
+.price_title_head {
+    display: inline-block;
+    font-size: 3em;
+    border-bottom: 2px solid #68c7fe;
+    padding-bottom: 3px;
+    font-weight: bold;
+    width: 10%;
+}
+
+.price_section_title p {
+    font-size: 1.5em;
+    padding: 3% 15% 0%;
+}
+
+.our_price_info {
+    margin: 5% 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.plan_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price_info {
+    background-color: #032431;
+    border-radius: 20px 20px;
+    color: white;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+.price_info ul li {
+    margin: 20px;
+}
+
+.price_info ul li:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.price_info ul li:nth-child(2) {
+    font-size: 3em;
+}
+
+.price_info ul li:last-of-type {
+    color: #fe6805;
+}
+
+.select_btn {
+    background-color: #03174C;
+    width: max-content;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.select_btn:hover {
+    background-color: #fe6805;
+}
+
+.request_map_wrapper {
+    margin: 3% 0% 0% 0%;
+    display: flex;
+}
+
+.call_request {
+    background-image: url(images/contact-bg.png);
+    background-size: 100%;
+    background-position: center;
+    width: 50%;
+    height: 60%;
+    background-repeat: no-repeat;
+}
+
+.request_head {
+    color: white;
+    font-size: 2em;
+    margin: 0% 0% 0% 20%;
+    padding: 10% 0% 0% 0%;
+}
+
+.map {
+    width: 50%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.call_request form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0% 0% 0% 20%;
+    padding: 0% 0% 5% 0%;
+}
+
+.call_request form *:not(:last-child) {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    margin: 5% 0% 0% 0%;
+    outline: none;
+}
+
+.contact_btn {
+    background-color: #fe6805;
+    width: max-content;
+    color: white;
+    padding: 15px 80px;
+    border-radius: 10px;
+    margin-top: 5%;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.contact_btn:hover {
+    color: black;
+}
+
+footer {
+    padding: 3% 0% 0% 0%;
+    height: 30%;
+    background-color: #081846;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_contacts {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_contacts div {
+    display: flex;
+    align-items: center;
+}
+
+.footer_contacts div:first-of-type {
+    width: 30%;
+}
+
+.social ul{
+    display: flex;
+}
+
+.social ul li {
+    padding: 0% 5%;
 }
